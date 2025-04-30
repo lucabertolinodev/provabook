@@ -1,10 +1,155 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
 <head>
-    <title>Confronta Prezzi Libri</title>
+    <!-- Meta tag per SEO e social -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Confronta i prezzi dei libri su Amazon, IBS, Feltrinelli e risparmia. Trova le migliori offerte sui tuoi titoli preferiti.">
+    <meta name="keywords" content="libri, confronta prezzi, offerte libri, risparmiare su libri">
+    <title>BookPriceCompare | Confronta i prezzi dei libri online</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Stile personalizzato -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            padding-top: 20px;
+            background-color: #f8f9fa;
+        }
+        .hero {
+            background-color: #343a40;
+            color: white;
+            padding: 40px 0;
+            margin-bottom: 30px;
+            border-radius: 5px;
+        }
+        .book-card {
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Benvenuto sul futuro comparatore di libri!</h1>
-    <p>Stiamo lavorando per offrirti il miglior servizio.</p>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">BookPriceCompare</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Chi Siamo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contatti</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="container hero text-center">
+        <h1>Trova il prezzo migliore per i tuoi libri</h1>
+        <p class="lead">Confronta i prezzi tra i principali negozi online e risparmia fino al 30%</p>
+        <form class="d-flex justify-content-center">
+            <input class="form-control me-2 w-50" type="search" placeholder="Cerca un libro...">
+            <button class="btn btn-primary" type="submit">Cerca</button>
+        </form>
+    </div>
+
+    <!-- Risultati Mockup (Esempio per Amazon Associates) -->
+    <div class="container">
+        <h2 class="mb-4">Libri Popolari</h2>
+        <div class="row">
+            <!-- Libro 1 -->
+            <div class="col-md-4">
+                <div class="card book-card">
+                    <img src="https://m.media-amazon.com/images/I/81bsw6fnUiL._AC_UF1000,1000_QL80_.jpg" class="card-img-top" alt="Copertina Il Nome della Rosa">
+                    <div class="card-body">
+                        <h5 class="card-title">Il Nome della Rosa</h5>
+                        <p class="card-text">Umberto Eco</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="text-danger fw-bold">12,90 €</span>
+                            <small class="text-muted">Amazon</small>
+                        </div>
+                        <a href="#" class="btn btn-success mt-2 w-100">Vedi offerta</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Libro 2 -->
+            <div class="col-md-4">
+                <div class="card book-card">
+                    <img src="https://m.media-amazon.com/images/I/71X1p4TGlxL._AC_UF1000,1000_QL80_.jpg" class="card-img-top" alt="Copertina Harry Potter">
+                    <div class="card-body">
+                        <h5 class="card-title">Harry Potter e la Pietra Filosofale</h5>
+                        <p class="card-text">J.K. Rowling</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="text-danger fw-bold">15,90 €</span>
+                            <small class="text-muted">IBS</small>
+                        </div>
+                        <a href="#" class="btn btn-success mt-2 w-100">Vedi offerta</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Libro 3 -->
+            <div class="col-md-4">
+                <div class="card book-card">
+                    <img src="https://m.media-amazon.com/images/I/81nA2C1EwXL._AC_UF1000,1000_QL80_.jpg" class="card-img-top" alt="Copertina La Solitudine dei Numeri Primi">
+                    <div class="card-body">
+                        <h5 class="card-title">La Solitudine dei Numeri Primi</h5>
+                        <p class="card-text">Paolo Giordano</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="text-danger fw-bold">10,50 €</span>
+                            <small class="text-muted">Feltrinelli</small>
+                        </div>
+                        <a href="#" class="btn btn-success mt-2 w-100">Vedi offerta</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sezione "Chi Siamo" -->
+    <div class="container mt-5" id="about">
+        <h2 class="mb-4">Chi Siamo</h2>
+        <p>BookPriceCompare è un servizio gratuito che aiuta i lettori a trovare le migliori offerte sui libri online. Confrontiamo i prezzi tra i principali negozi (Amazon, IBS, Feltrinelli, ecc.) per garantirti il massimo risparmio.</p>
+        <p>Il nostro obiettivo è promuovere la lettura rendendola più accessibile a tutti.</p>
+    </div>
+
+    <!-- Sezione Contatti -->
+    <div class="container mt-5" id="contact">
+        <h2 class="mb-4">Contatti</h2>
+        <p>Hai domande o suggerimenti? Scrivici a <a href="mailto:info@bookpricecompare.example">info@bookpricecompare.example</a>.</p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p>&copy; 2023 BookPriceCompare. Tutti i diritti riservati.</p>
+            <p>
+                <a href="#" class="text-white">Privacy Policy</a> | 
+                <a href="#" class="text-white">Termini di Servizio</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
